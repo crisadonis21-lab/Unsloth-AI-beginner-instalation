@@ -1,6 +1,8 @@
 # Unsloth-AI-beginner-instalation
 "Para usar el entorno en VS Code Jupyter Notebooks, es indispensable instalar ipykernel dentro del entorno de Conda para que sea visible como Kernel seleccionable".
 
+Requisito Crítico de WSL2: Asegúrese de asignar al menos 8GB de RAM a la instancia de WSL2 (vía .wslconfig). Con 3GB o menos, el registro del kernel de Jupyter y la carga de modelos de IA causarán cierres inesperados de la terminal por falta de memoria (OOM).
+
 🛡️ El "Blindaje" (Solución a Errores de Atributos)
 
 Este es el Pro-Tip de nuestra batalla. WSL2 a veces no registra tipos de datos experimentales de bits (int1, int3, etc.). Creamos un parche externo que Python lee automáticamente.
